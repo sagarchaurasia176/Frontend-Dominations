@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* main parent */
+#parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#childs {
+  background-color: beige;
+  border: 2px solid black;
+  width: 30%;
+  height: 22vh;
+}
+
+/* act as the parent */
+.containe {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(71, 59, 44);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.childs {
+  border: 2px solid black;
+  width: 30rem;
+  height: 40vh;
+  background-color: olive;
+}
+
+/* next container */
+.containers {
+  width: 100%;
+  min-height: 100%;
+  gap: 12px;
+  background-color: antiquewhite;
+}
+.childss {
+  width: 60%;
+  height: 100vh;
+  border-radius: 3px solid black;
+  margin-bottom: 3px;
+  background-color: rgb(47, 0, 76);
+}
+.childss-2 {
+  width: 60%;
+  height: 100vh;
+  margin-bottom: 3px;
+  background-color: rgb(47, 0, 76);
+}

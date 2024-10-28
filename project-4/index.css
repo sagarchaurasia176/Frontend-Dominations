@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .headers {
+  width: 100%;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  height: 20%;
+}
+.text-descp p {
+  padding-left: 2rem;
+  font-weight: bold;
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+aside {
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+aside p:nth-child(1n) {
+  padding-bottom: 1rem;
+  border-top: 2px solid black;
+  padding-right: 2rem;
+}
+
+.image-banner {
+  width: 100%;
+  height: 42.5%;
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/02/14/08/modal-4173612_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+/* lets start to make the responsiveness */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    gap: 32px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+  }
+
+  .container .headers {
+    width: 100%;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .text-descp p {
+    padding-left: 1rem;
+    font-weight: bold;
+    color: red;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  aside {
+    padding-top: 0.1rem;
+    font-weight: bold;
+    display: flex;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  aside p:nth-child(1n) {
+    border-top: 2px solid black;
+    text-align: center;
+  }
+
+  .image-banner {
+    width: 100%;
+    height: 28vh;
+    background-image: url("https://cdn.pixabay.com/photo/2019/05/02/14/08/modal-4173612_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: 0% 10%;
+  }
+}
