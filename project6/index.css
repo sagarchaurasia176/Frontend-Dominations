@@ -1,0 +1,168 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: rgb(15, 8, 0);
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    background-color: azure;
+    width: 100%;
+    padding: 1.1rem;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 22px;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+video {
+    width: 50%;
+}
+
+aside {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.next-1 {
+    width: 100%;
+    height: 60%;
+    padding: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 52, 52);
+}
+
+.next-1 img {
+    width: 20%;
+    height: 30vh;
+
+    border-radius: 12rem;
+}
+
+.hover-effect {
+    height: 80%;
+}
+
+.texts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+}
+
+.updates {
+    color: white;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.box {
+    padding: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav {
+        display: flex;
+        background-color: azure;
+        width: 100%;
+        padding: 1.1rem;
+    }
+
+    section {
+        width: 100%;
+        padding: 1.1rem;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        justify-content: space-between;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    aside {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .next-1 {
+        padding: 1.1rem;
+        height: 150vh;
+            background-color: rgb(0, 52, 52);
+    }
+
+    .next-1 img {
+        width: 100%;
+        flex-wrap: wrap;
+        border-radius: 12rem;
+    }
+
+    .hover-effect {
+        margin-top: 2rem;
+        height: 100vh;
+    }
+
+    .texts {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.1rem;
+    }
+
+    .updates {
+        color: white;
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .box {
+        padding: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        width: 100%;
+        display: none;
+        list-style-type: none;
+        text-decoration: none;
+        gap: 22px;
+    }
+}
