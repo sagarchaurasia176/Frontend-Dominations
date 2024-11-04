@@ -9,20 +9,20 @@
     background-color: black;
   }
   #box{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     background-color: aquamarine;
   }
 
 
   #box-1{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     background-color: rgb(0, 83, 10);
   }
 
   #box-2{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(50, 145, 113);
   }

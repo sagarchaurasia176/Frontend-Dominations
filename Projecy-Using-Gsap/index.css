@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav-list {
+  display: flex;
+  gap: 22px;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.main-box {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header {
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 10%;
+
+  padding: 1rem;
+}
+.header h1 {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+  font-weight: 200;
+  margin: auto;
+  text-align: center;
+}
+.header h1:nth-child(1) {
+  font-size: 4rem;
+  margin-right: 15rem;
+}
+
+.header h1:nth-child(2) {
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header h1:nth-child(3) {
+  font-size: 3rem;
+}
+
+.img-boxes img {
+  width: 14.1%;
+  top: 20%;
+  border-radius: 1rem;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  z-index: 1; /* Sets image behind the text */
+}
+#img-1 {
+  rotate: 0deg;
+}
+#img-2 {
+    rotate: 40deg;
+}
+#img-3 {
+
+  rotate: 30deg;
+}
+
+#img-4 {
+
+  rotate: 44deg;
+}
+
