@@ -11,7 +11,8 @@ body {
 }
 #main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
 #nav-bar {
@@ -43,6 +44,7 @@ p {
 .main-box {
   width: 100%;
   padding: 1rem;
+  height: 100%;
 }
 
 .header {
@@ -89,15 +91,91 @@ p {
   rotate: 0deg;
 }
 #img-2 {
-    rotate: 40deg;
+  rotate: 40deg;
 }
 #img-3 {
-
   rotate: 30deg;
 }
 
 #img-4 {
-
   rotate: 44deg;
 }
 
+/* parent */
+.box-1 {
+  width: 100%;
+  height: 100vh;
+}
+/* parent */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  rotate: 50deg;
+
+  gap: 2rem;
+}
+.icons i:nth-child(1n) {
+  font-size: 3em;
+  color: red;
+}
+.content-of-card {
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgb(19, 19, 19);
+}
+
+.content-of-card .heading {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* main-parent */
+.about-me-div {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+/* container-div */
+.container-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-about {
+  padding: 4rem;
+}
+.header-text {
+  text-transform: capitalize;
+  font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 40px;
+}
+
+.btn {
+  width: 50%;
+  font-size: 1em;
+  text-transform: capitalize;
+  font-weight: bolder;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.copy-right {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}

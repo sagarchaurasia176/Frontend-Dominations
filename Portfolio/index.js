@@ -33,3 +33,19 @@ tl.from(".img-boxes img", {
   duration: 1,
   stagger: 0.5,
 });
+
+
+
+tl.to(".cards .content-of-card", {
+  transition: "all 1s",
+  x: -20,
+  rotate: 0, // Rotate the element by 15 degrees (adjust as needed)
+  scrollTrigger: {
+    trigger: ".cards",
+    scroller: "body",
+    start: "top 0",
+    end: "top -50%",  // Adjust the end position as needed
+    scrub: true,
+    pin: true,
+  },
+});
