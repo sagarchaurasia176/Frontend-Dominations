@@ -34,9 +34,7 @@ tl.from(".img-boxes img", {
   stagger: 0.5,
 });
 
-
-
-tl.to(".cards .content-of-card", {
+gsap.to(".cards .content-of-card", {
   transition: "all 1s",
   x: -20,
   rotate: 0, // Rotate the element by 15 degrees (adjust as needed)
@@ -44,8 +42,25 @@ tl.to(".cards .content-of-card", {
     trigger: ".cards",
     scroller: "body",
     start: "top 0",
-    end: "top -50%",  // Adjust the end position as needed
+    end: "top -50%", // Adjust the end position as needed
     scrub: true,
     pin: true,
   },
+});
+
+// text mover applied there so we get !
+gsap.from(".text-with-the-scroller .text", {
+  transform:"translateX(-105%)",
+  transition: "all 2s",
+  
+  // Scroll Trigger applied there so we get
+  scrollTrigger : {
+    trigger : ".text-with-the-scroller",
+    scroller:"body",
+    start:"top 0",
+    end :"top -100%",
+    scrub : 2,
+    pin:true
+  }
+
 });
