@@ -9,12 +9,12 @@ body {
   background-color: black;
   color: white;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 #main {
-  width: 100%;
-  height: 100vh;
   background-color: black;
 }
 
@@ -25,6 +25,7 @@ body{
   align-items: center;
   padding: 1rem;
 }
+
 .nav-list {
   display: flex;
   gap: 22px;
@@ -34,6 +35,7 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 span {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -45,9 +47,8 @@ p {
 }
 
 .main-box {
-  width: 100%;
   padding: 1rem;
-  height: 100%;
+  height: 100vh;
 }
 
 .header {
@@ -55,9 +56,9 @@ p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 10%;
-
   padding: 1rem;
 }
+
 .header h1 {
   width: 80%;
   position: relative;
@@ -66,6 +67,7 @@ p {
   margin: auto;
   text-align: center;
 }
+
 .header h1:nth-child(1) {
   font-size: 4rem;
   margin-right: 15rem;
@@ -83,19 +85,23 @@ p {
 
 .img-boxes img {
   width: 14.1%;
-  top: 20%;
+  top: 4%;
   border-radius: 1rem;
   left: 50%;
   position: absolute;
   right: 50%;
-  z-index: 1; /* Sets image behind the text */
+  z-index: 1;
+  /* Sets image behind the text */
 }
+
 #img-1 {
   rotate: 0deg;
 }
+
 #img-2 {
   rotate: 40deg;
 }
+
 #img-3 {
   rotate: 30deg;
 }
@@ -106,9 +112,9 @@ p {
 
 /* parent */
 .box-1 {
-  width: 100%;
   height: 100vh;
 }
+
 /* parent */
 .cards {
   display: flex;
@@ -117,13 +123,14 @@ p {
   width: 100%;
   height: 100%;
   rotate: 50deg;
-
   gap: 2rem;
 }
+
 .icons i:nth-child(1n) {
   font-size: 3em;
   color: red;
 }
+
 .content-of-card {
   width: 100%;
   height: 50%;
@@ -141,12 +148,13 @@ p {
 /* main-parent */
 .about-me-div {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 2rem;
   color: white;
   display: flex;
   justify-content: space-around;
 }
+
 /* container-div */
 .container-div {
   width: 100%;
@@ -157,6 +165,7 @@ p {
 .content-about {
   padding: 4rem;
 }
+
 .header-text {
   text-transform: capitalize;
   font-size: 1em;
@@ -183,8 +192,7 @@ p {
   align-items: center;
 }
 
-
-.text-with-the-scroller{
+.text-with-the-scroller {
   display: flex;
   height: 90vh;
   color: white;
@@ -193,7 +201,6 @@ p {
 }
 
 /* text-with-the-scroller here */
-.text-with-the-scroller h1:nth-child(1n){
+.text-with-the-scroller h1:nth-child(1n) {
   font-size: 40vw;
-
 }

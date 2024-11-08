@@ -1,3 +1,7 @@
+
+
+
+
 var tl = gsap.timeline();
 // time line applied there so we get !
 
@@ -34,9 +38,10 @@ tl.from(".img-boxes img", {
   stagger: 0.5,
 });
 
-gsap.to(".cards .content-of-card", {
-  transition: "all 1s",
-  x: -20,
+gsap.from(".cards .content-of-card", {
+  transition: "all 2s",
+  x: -500,
+  stagger: 1,
   rotate: 0, // Rotate the element by 15 degrees (adjust as needed)
   scrollTrigger: {
     trigger: ".cards",
@@ -49,18 +54,19 @@ gsap.to(".cards .content-of-card", {
 });
 
 // text mover applied there so we get !
-gsap.from(".text-with-the-scroller .text", {
-  transform:"translateX(-105%)",
+gsap.to(".text-with-the-scroller .text", {
+  transform: "translateX(-105%)",
   transition: "all 2s",
-  
   // Scroll Trigger applied there so we get
-  scrollTrigger : {
-    trigger : ".text-with-the-scroller",
-    scroller:"body",
-    start:"top 0",
-    end :"top -100%",
-    scrub : 2,
-    pin:true
-  }
-
+  scrollTrigger: {
+    trigger: ".text-with-the-scroller",
+    scroller: "body",
+    start: "top 0",
+    end: "top -100%",
+    scrub: 2,
+    pin: true,
+  },
 });
+
+
+
