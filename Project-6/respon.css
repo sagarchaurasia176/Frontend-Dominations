@@ -1,0 +1,71 @@
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .left-nav {
+      gap: 4px;
+    }
+  
+    .right-nav span {
+      font-size: 1.2rem; /* Smaller font size */
+    }
+  
+    .btn-bar button {
+      padding: 0.6rem; /* Reduced padding for buttons */
+    }
+  
+    .next-hero {
+      padding: 0.8rem;
+      height: 60vh; /* Reduced height for mobile screens */
+    }
+  
+    .texts {
+      width: 90%;
+      border-radius: 1rem; /* Reduced border-radius */
+    }
+  
+    .main-header-text {
+      font-size: 1.6rem;
+      padding: 0.8rem;
+    }
+  
+    .hire {
+      width: 100%;
+      padding: 0.8rem;
+      margin-left: 0;
+    }
+  
+    .hire button {
+      margin: 0 auto;
+      padding: 0.6rem;
+    }
+  
+    .vid-card img {
+      width: 20vw; /* Larger images for smaller screens */
+    }
+  }
+  
+  /* Media Query for Very Small Screens (Phones) */
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column; /* Stack items vertically */
+      height: auto;
+    }
+  
+    .right-nav span {
+      font-size: 1rem;
+    }
+  
+    .texts {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .hire {
+      width: 100%;
+    }
+  
+    .vid-card img {
+      width: 30vw;
+      max-width: 80px; /* Adjusted for very small screens */
+    }
+  }
