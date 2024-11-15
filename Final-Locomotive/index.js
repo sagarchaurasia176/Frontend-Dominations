@@ -37,37 +37,32 @@ function LocoMotive() {
 }
 
 function SplitText() {
-  var h1Text = document.querySelector("#page-1 .head h1").textContent;
-  var splited = h1Text.split(" ");
-
-  // splited the value into the arr
-  var clutter = "";
-  splited.forEach(function (elem) {
-    clutter += `<span>${elem}</span>`;
+  var text = document.querySelectorAll("#page-1 h1").textContent;
+  var splited = text.split("");
+  // add into one tag here so we get !
+  var clutter = " ";
+  splited.forEach(function (ele) {
+    clutter += `<span>${ele}</span>\n`;
   });
-  // console.log(clutter);
-  document.querySelector("#page-1 .head h1").innerHTML = clutter;
-  console.log(clutter);
+  document.querySelectorAll("h1").innerHTML = clutter;
 }
-
+// // function call stuff
 function GsapTrigger() {
-  gsap.to("#page-1 h1 span", {
-    // Update selector to target each span
-    scale: 1,
-    color: "red",
-    stagger: 1.1,
+  gsap.to("#page-1 h1", {
+    color: "white",
+    stagger: 0.4,
     scrollTrigger: {
-      trigger: "#page-1 h1",
-      scroller: "#main", // Ensure #main is scrollable or replace with "body"
-      start: "top 10%",
-      end: "top 30%",
-      scrub: 1,
+      trigger: "#page-1",
+      scroller:"#main",
+      start: "top 30%",
+      end: "top -10%",
       pin: true,
-      markers: true, // Use markers to debug
+      scrub: 2,
     },
   });
 }
 
+// // gsap
 GsapTrigger();
 LocoMotive();
 SplitText();

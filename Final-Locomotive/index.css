@@ -24,10 +24,15 @@ body {
  h1{
   padding: 1rem;
   font-size:12rem;
-  color: wheat;
   font-size: 12rem;
 }
 
+#quote {
+  font-size: clamp(2rem, 10rem, 5vw);
+  color: #dfdcff;
+  text-align: center;
+  line-height: 1.2
+}
 .page-2 {
   height: 100vh;
   display: flex;
