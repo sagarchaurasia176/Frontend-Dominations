@@ -7,7 +7,6 @@ function LocoMotive() {
   });
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
-
   // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy("#main", {
     scrollTop(value) {
@@ -28,41 +27,97 @@ function LocoMotive() {
       ? "transform"
       : "fixed",
   });
-
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
 
+
+
+// gsap applied it here so we get
+gsap.to(".page-2 .boxes", {
+  rotate: 369,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".page-2 .boxes",
+    start: "top 10%",
+    end: "top -20%",
+    pin: true,
+    scrub: 1,
+  },
+});
+
+
+// split Text page-1
 function SplitText() {
-  var text = document.querySelectorAll("#page-1 h1").textContent;
-  var splited = text.split("");
-  // add into one tag here so we get !
-  var clutter = " ";
-  splited.forEach(function (ele) {
-    clutter += `<span>${ele}</span>\n`;
-  });
-  document.querySelectorAll("h1").innerHTML = clutter;
-}
-// // function call stuff
-function GsapTrigger() {
-  gsap.to("#page-1 h1", {
-    color: "white",
-    stagger: 0.4,
-    scrollTrigger: {
-      trigger: "#page-1",
-      scroller:"#main",
-      start: "top 30%",
-      end: "top -10%",
-      pin: true,
-      scrub: 2,
-    },
+  var text = document.querySelectorAll("#page-1 h1");
+  text.forEach(function (ele) {
+    var cluster = "";
+    var h1Txt = ele.textContent;
+    var split = h1Txt.split("");
+    //create the cluster
+    split.forEach(function (elem) {
+      cluster += `<span>${elem}</span>`;
+    });
+    ele.innerHTML = cluster;
   });
 }
 
-// // gsap
-GsapTrigger();
-LocoMotive();
 SplitText();
+
+// Gsap trigger
+function GsapTrigger() {
+  gsap.to("#page-1 h1 span ", {
+    color: "blue",
+   opacity:1,
+    stagger:0.4,
+    scrollTrigger: {
+      trigger: "#page-1 h1",
+      scroller: "body",
+      start: "top 10%",
+      end: "top -10%",
+      pin: true,
+      scrub: 1,
+    },
+  });
+}
+GsapTrigger();
+
+
+
+
+// next page-3 
+function Texts() {
+  const txtElement = document.querySelector(".page-3 .boxes h2");
+  const text = txtElement.textContent;
+  
+  // Split the text and wrap each character in a span
+  let clutter = "";
+  text.split("").forEach(function (char) {
+    clutter += `<span>${char}</span>`;
+  });
+  // Set the updated HTML content
+  txtElement.innerHTML = clutter;
+}
+Texts();
+
+
+
+
+gsap.to(".page-3 .boxes h2 span", {
+  color: "yellow",
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: ".page-3 .boxes",
+    scroller: "body",
+    start: "top 10%",
+    end: "top -20%",
+    pin: true,
+    scrub:3,
+  },
+});
+
+
+// LocoMotive();
+//
