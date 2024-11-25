@@ -81,15 +81,29 @@ timeLine.to(".loader", {
 
 //timeLine
 timeLine.from(".page-1", {
-  opacity:0,
-  y:100,
+  opacity: 0,
+  y: 100,
   ease: "power4.out",
 });
 
 
+// hero-head-1 h2 moves
+timeLine.to('.hero .head-1 h2' , {
+  y: 40,
+  stagger: 0.1,
+})
 
 
+// call the crsr
+document.addEventListener('mousemove' , function(det){
+    gsap.to('#crsr' , {
+      stagger:0.2,
+      left:det.x,
+      top:det.y,
 
+    })
+
+})
 
 
 

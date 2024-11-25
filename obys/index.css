@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
+  src: url('./fonts/plain-light-webfont.ttf') format('truetype'); /* Specify the format */
+  font-weight: normal; /* Optional: set the weight of this font */
+  font-style: normal; /* Optional: set the style of this font */
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,18 +12,29 @@
   color: white;
   font-family: "Plain light";
 }
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#crsr{
+  width:2.3vw;
+  height:2.3vh;
+  position: fixed;
+  border-radius: 100%;
+  padding: 1rem;
+  z-index:  9999;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
 
 /* parent */
 #main {
   position: relative;
   background-color: black;
 }
-/* page-1 */
-.page-1 {
-  height: 100vh;
-  background-color: rgba(178, 178, 178, 0.432);
 
-}
 .head-num h2 {
   font-size: 5vw;
   font-family: silk serif;
@@ -67,38 +85,37 @@
   align-items: center;
 }
 /* line-1 n:th child 1n */
-.line-1 h2:nth-child(1n){
+.line-1 h2:nth-child(1n) {
   animation: anime 2s alternate-reverse infinite;
   color: white;
 }
 /* keyFrames */
 @keyframes anime {
-    0%{
-      font-family: "silk serif";
-      -webkit-text-stroke: 1px #fff;
-      font-weight: 500;
-      opacity: 1;
-    }48%{
-      font-family: "silk serif";
-      -webkit-text-stroke: 1px #fff;
-      font-weight: 500;
-      opacity: 0;
-
-    }50%{
-      font-family: "silk serif";
-      -webkit-text-stroke: 1px #fff;
-      font-weight: 500;
-      opacity: 1;
-    }
-    100%{
-      font-family: "silk serif";
-      -webkit-text-stroke: 1px #fff;
-      font-weight: 500;
-      opacity: 0;
-    }
-
+  0% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  48% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
 }
-
 
 .my-head {
   font-size: 3vw;
@@ -113,3 +130,78 @@
   font-size: 6vw;
   text-transform: uppercase;
 }
+
+/* page-1 */
+.page-1 {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+}
+
+.navbar-logo img {
+  height: 40px; /* Adjust logo size */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
+}
+.navbar-links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.hero .head-1 h2{
+  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
+  text-transform: uppercase;
+  font-size: 6vw;
+  font-weight:600;
+  line-height: 7vw;
+}
+
+.hero{
+  width:70%;
+  height: 70vh;
+  margin-left: 32vh;
+  margin-top: 12vh;
+}
+
+.hero .head-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
