@@ -19,13 +19,15 @@ body {
 }
 
 #crsr{
-  width:2.3vw;
-  height:2.3vh;
+  width:2vw;
+  height:2vh;
   position: fixed;
   border-radius: 100%;
   padding: 1rem;
   z-index:  9999;
   border: 2px solid white;
+  mix-blend-mode: difference;
+  transform: translate(-50% , -50%);
   background-color: rgba(0, 0, 0, 0);
 }
 

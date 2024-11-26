@@ -86,24 +86,30 @@ timeLine.from(".page-1", {
   ease: "power4.out",
 });
 
-
 // hero-head-1 h2 moves
-timeLine.to('.hero .head-1 h2' , {
+timeLine.to(".hero .head-1 h2", {
   y: 40,
   stagger: 0.1,
-})
-
+});
 
 // call the crsr
-document.addEventListener('mousemove' , function(det){
-    gsap.to('#crsr' , {
-      stagger:0.2,
-      left:det.x,
-      top:det.y,
+document.addEventListener("mousemove", function (det) {
+  gsap.to("#crsr", {
+    cursor:"pointer",
+    stagger: 0.2,
+    left: det.x,
+    top: det.y,
+  });
+});
 
-    })
+function SheryMang(){
+  // shrey.js
+  Shery.makeMagnet(".navbar navbar-links li" /* Element to target.*/, {
+    //Parameters are optional.
+  });
+}
 
-})
+SheryMang()
 
 
 
