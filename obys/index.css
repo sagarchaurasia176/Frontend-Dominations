@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
-  src: url('./fonts/plain-light-webfont.ttf') format('truetype'); /* Specify the format */
+  font-family: "PlainLight"; /* Choose a meaningful name for the font */
+  src: url("./fonts/plain-light-webfont.ttf") format("truetype"); /* Specify the format */
   font-weight: normal; /* Optional: set the weight of this font */
   font-style: normal; /* Optional: set the style of this font */
 }
@@ -18,16 +18,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
-#crsr{
-  width:2vw;
-  height:2vh;
+#crsr {
+  width: 2vw;
+  height: 2vh;
   position: fixed;
   border-radius: 100%;
   padding: 1rem;
-  z-index:  9999;
+  z-index: 9999;
   border: 2px solid white;
   mix-blend-mode: difference;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -139,8 +139,6 @@ body {
   background-color: rgba(0, 0, 0, 0.432);
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -168,42 +166,41 @@ body {
   text-decoration: none;
   color: white;
   padding: 8px 12px;
-  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
+  font-family: "PlainLight"; /* Choose a meaningful name for the font */
 }
 .navbar-links a:hover {
   background-color: #575757;
   border-radius: 4px;
 }
 
-.hero .head-1 h2{
-  font-family: 'PlainLight'; /* Choose a meaningful name for the font */
+.hero .head-1 h2 {
+  font-family: "PlainLight"; /* Choose a meaningful name for the font */
   text-transform: uppercase;
   font-size: 6vw;
-  font-weight:600;
+  font-weight: 600;
   line-height: 7vw;
 }
 
-.hero{
-  width:70%;
+.hero {
+  width: 70%;
   height: 70vh;
   margin-left: 32vh;
   margin-top: 12vh;
 }
 
-.hero .head-1{
+.hero .head-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
+/* nth-child */
+.hero .head-1:nth-child(3n) {
+  padding-bottom: 3vw;
+  color: red;
+  border-bottom: 0.8vw solid white  ;
+  transition: all ease 0.3;
+}
+/* webkit stroke apply it here */
+.head-1 h2:hover{
+  background-color: red;
+}

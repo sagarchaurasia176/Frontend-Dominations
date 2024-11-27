@@ -103,12 +103,10 @@ document.addEventListener("mousemove", function (det) {
 });
 
 function SheryMang(){
-  // shrey.js
-  Shery.makeMagnet(".navbar navbar-links li" /* Element to target.*/, {
+  Shery.makeMagnet(".navbar-links li" /* Element to target.*/, {
     //Parameters are optional.
   });
 }
-
 SheryMang()
 
 
