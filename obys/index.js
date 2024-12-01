@@ -53,6 +53,7 @@ function loaderTexts() {
     delay: 0.5,
   });
 }
+
 loaderTexts();
 // time Line apply it here so we get !
 let timeLine = gsap.timeline();
@@ -95,25 +96,17 @@ timeLine.to(".hero .head-1 h2", {
 // call the crsr
 document.addEventListener("mousemove", function (det) {
   gsap.to("#crsr", {
-    cursor:"pointer",
+    cursor: "pointer",
     stagger: 0.2,
     left: det.x,
     top: det.y,
   });
 });
 
-function SheryMang(){
-  Shery.makeMagnet(".navbar-links li" /* Element to target.*/, {
-    //Parameters are optional.
-  });
-}
-SheryMang()
-
-
-
-
-
-
-
-
+Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 3, 0.320, 4)",
+  duration: 1,
+});
 
