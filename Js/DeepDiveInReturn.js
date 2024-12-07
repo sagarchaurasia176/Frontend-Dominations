@@ -1,12 +1,5 @@
 //return  deep dive
 function DeepDiveInreturn() {
-    return Math.random();
+  return Math.random();
 }
 DeepDiveInreturn();
-
-
-
-
-
-
-
