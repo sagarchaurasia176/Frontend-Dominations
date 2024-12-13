@@ -1,7 +1,7 @@
 const APi = {
   name: function () {
     // its an obj method,
-    console.log(this)
+    console.log(this);
     function Data() {
       // This is window function => which give you the window data
       console.log(this);
