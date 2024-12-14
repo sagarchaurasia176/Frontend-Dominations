@@ -1,17 +1,13 @@
-// protypal
-function makeHumn() {
-  this.name = "sagar";
+// protypal -> constructor call to its obj are known as protypal !
+function obj(name, age) {
+  this.name = name;
+  this.age = age;
 }
-
-makeHumn.prototype.PrintData = function () {
-  console.log(`hi my name is ${this.name}`);
+obj.prototype.Data = function () {
+  console.log(this.age);
 };
-
-makeHumn()
-
-
-
-
+let ans = new obj("Sagar", 12);
+console.log(ans);
 
 
 
