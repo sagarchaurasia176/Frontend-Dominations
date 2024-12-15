@@ -1,13 +1,13 @@
-// protypal -> constructor call to its obj are known as protypal !
-function obj(name, age) {
+// In JavaScript, a prototype is a mechanism by which objects inherit properties and methods from one another.
+function obj(name) {
   this.name = name;
-  this.age = age;
+  console.log(name);
 }
-obj.prototype.Data = function () {
-  console.log(this.age);
+obj.prototype.prints = function () {
+  console.log(this.name);
 };
-let ans = new obj("Sagar", 12);
-console.log(ans);
 
+obj.prototype.nickName = "Sagar";
 
-
+const obj1 = new obj("Sagar");
+const obj2 = new obj("cha");
