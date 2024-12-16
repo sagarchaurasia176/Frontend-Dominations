@@ -29,7 +29,7 @@ function add(num1, num2) {
   return function (val) {
     val = num1 + num2;
     console.log("totoal sum");
-    console.log(val)
+    console.log(val);
   };
 }
 const val = add(1, 2);
