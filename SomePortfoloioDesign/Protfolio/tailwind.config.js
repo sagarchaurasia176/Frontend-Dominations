@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'backgroundImage': "url('https://cdn.pixabay.com/photo/2024/12/03/08/08/ai-generated-9241538_1280.jpg')",
+        'backgroundImage': "url('https://image.lexica.art/full_webp/260b4b7d-f850-4bed-9889-bbf6d994c461')",
       }
   },
   plugins: [],

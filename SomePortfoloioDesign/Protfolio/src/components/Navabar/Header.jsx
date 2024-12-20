@@ -10,10 +10,9 @@ const Header = () => {
           <img src={Logo} alt="" />
         </div>
         {/* Menu bar */}
-        <div className=" text-black bg-slate-300 rounded-lg  font-sans">
-          <ul className=" flex space-x-4  font-semibold  w-full p-2   capitalize ">
+        <div className=" animate-bounce text-black bg-slate-300 rounded-lg  font-sans">
+          <ul className=" flex  space-x-4  font-semibold  w-full p-2   capitalize ">
             <Link>Menu</Link>
-          
           </ul>
         </div>
       </nav>

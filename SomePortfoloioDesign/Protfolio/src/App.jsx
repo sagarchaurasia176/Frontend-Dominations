@@ -3,13 +3,15 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Navabar/Header";
 import Section1 from "./components/FirstSection/Section1";
+import LoadParent from "./components/Loader/LoadParent";
 
 // App Component
 const App = () => {
   return (
     <>
-    
-    <div className=" h-screen w-full  bg-backgroundImage  bg-cover bg-center">
+    {/* Loading */}
+    <LoadParent/>
+    <div className=" h-screen w-full  bg-backgroundImage   bg-cover bg-center">
     <Header />
       {/* navbar */}
       <Routes>
