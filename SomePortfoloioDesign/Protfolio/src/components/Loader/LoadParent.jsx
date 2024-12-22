@@ -3,7 +3,7 @@ import LoadChild from './LoadChild'
 
 const LoadParent = () => {
   return (
-    <div className=' h-1 fixed w-full'>
+    <div className='  h-1  fixed w-full'>
       <LoadChild/>
     </div>
   )

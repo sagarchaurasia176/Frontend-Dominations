@@ -2,17 +2,17 @@ import React from "react";
 
 const SubHeader = () => {
   return (
-    <div className=" text-center">
-      <div className=" flex items-center   text-center">
+    <div className="">
+      <div className=" flex items-center justify-center">
         {/* text */}
-        <h2 className=" flex text-center text-4xl  bg-slate-800 p-2 font-extrabold  text-white rounded-lg text-orange-20">
-          A Passionate Web Developer
-        </h2>
-        
-        <div>
-        
-        </div>
+        <h1 className="  flex justify-center items-center  text-6xl  p-2 font-extrabold  text-white rounded-lg text-orange-20">
+          I Love To <br />
+        </h1>
+        <h1 className=" bg-orange-800 rounded-e-full p-2   animate-pulse">
+          Explore & Code
+        </h1>
       </div>
+      
     </div>
   );
 };

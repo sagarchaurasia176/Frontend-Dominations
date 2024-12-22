@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: a4;
+    src: url('./Fonts/a4.ttf');
+}
+@font-face {
+    font-family: u4;
+    src: url('./Fonts/u4.ttf');
+}
+
+
+@font-face {
+    font-family: u7;
+    src: url('./Fonts/u7.ttf');
+}
+
+
+@font-face {
+    font-family: u8;
+    src: url('./Fonts/u8.ttf');
+}
+
+h1{
+    font-family: u8;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h2{
+    font-family: u8;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+p{
+    font-family: u4;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
