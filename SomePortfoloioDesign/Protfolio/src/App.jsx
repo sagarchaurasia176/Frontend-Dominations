@@ -8,8 +8,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ContentHeader from "./components/contents/ContentHeader";
 import SubHeader from "./components/contents/SubHeader";
-import AboutBioPage from "./Pages/AboutBioPage";
-
+import MenuPage from "./Menu/MenuPage";
 // App Component
 const App = () => {
   const homeRef = useRef(null);
@@ -34,6 +33,7 @@ const App = () => {
           ref={homeRef}
           className="h-screen w-full z-10 fixed bg-gradient-to-l from-blue-800 via-black  bg-opacity-50 backdrop-blur-lg"
         >
+       <MenuPage/>
           <LoadParent />
           <div className=" h-screen my-32 lg:my-32 ">
             <div className="">
@@ -50,7 +50,6 @@ const App = () => {
           {/* navbar */}
           <Routes>
             <Route path="/" element={<Section1 />}></Route>
-            <Route path="/menu/page" element={<AboutBioPage/>}></Route>
           </Routes>
         </div>
       </div>

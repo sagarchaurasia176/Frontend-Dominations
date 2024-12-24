@@ -7,19 +7,20 @@ const Header = () => {
   return (
     <div>
       <nav className=" flex w-full  justify-between px-6  items-center">
-        <NavLink to="/">
-          <div className="size-12 cursor-pointer ">
+        <div className="size-12 cursor-pointer ">
+          <Link to="/" className=" cursor-pointer">
             <img src={Logo} alt="" />
-          </div>
-        </NavLink>
+          </Link>
+        </div>
+
         {/* Menu bar */}
         <div className=" text-black rounded-lg  font-sans">
-          <NavLink to="/menu/page" className="cursor-pointer ">
-            <h3 className=" text-black bg-orange-600  rounded-b-xl font-[u8]  w-full p-2   capitalize flex items-center cursor-pointer">
+        <Link to="/menu">
+          <h3 className=" text-black bg-orange-600  rounded-b-xl font-[u8]  w-full p-2   capitalize flex items-center cursor-pointer">    
               <FaBars className="mr-2" /> {/* Add icon here */}
               Menu
-            </h3>
-          </NavLink>
+          </h3>
+            </Link>
         </div>
       </nav>
     </div>
