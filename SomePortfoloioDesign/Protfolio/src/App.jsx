@@ -16,7 +16,7 @@ const App = () => {
   // Line Load gsap applied it !
   useGSAP(() => {
     tl.to(homeRef.current, {
-      y: "-100%",
+      // y: "-100%",
       opacity: 1,
       duration: 2,
       delay: 4.0,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -6,42 +6,54 @@ import gsap from "gsap";
 // Sub Header Component
 const SubHeader = () => {
   const textRef = useRef(null);
-  // upper Text Handler
-  const UpperTextHandler = ()=>{
-  let clutter = ""
-    let splitTxt = textRef.current.textContent.split('');
-    splitTxt.forEach((e) => {
-      clutter += `<span>${e}</span>`
-    })
-    textRef.current.innerHTML = clutter;
-}
-useGSAP(()=>{
-  gsap.from(textRef.current,{
-      y:100,
-      duration:1,
-      stagger:0.02,
+  const textRefs = useRef(null);
+  const splitText = new SplitText(textRef , {
+    type:"chars"
+  })
+  
+  useGSAP(()=>{
+    gsap.from(splitText.chars, {
+      duration: 1, 
+      y: 100, 
+      autoAlpha: 0, 
+      stagger: 0.05
+    });
 
   })
 
 
-})
+  // useGSAP(() => {
+  //   let clutter = "";
+  //   let splitTxt = textRef.current.textContent.split(' ');
+  //   splitTxt.forEach((word) => {
+  //     clutter += `<span>${word}</span><br/>`;
+  //   });
+  //   textRef.current.innerHTML = clutter;
+
+  //   // gsap
+  //   gsap.from("h1 span", {
+  //     opacity: 0,
+  //     delay:1,
+  //     stagger: 0.02,
+  //   });
+  // });
 
 
-// retunr the JSX !
+
+
+  // return the JSX !
   return (
     <div className="">
-      <div className=" flex items-center justify-center">
+      <div className="flex items-center justify-center">
         {/* text */}
-        <h1 onClick={UpperTextHandler} ref={textRef} className="  flex justify-center items-center  text-6xl  p-2 font-extrabold  text-white rounded-lg text-orange-20">
-          I Love To
+        <h1 ref={textRef} className="  font-[u8] flex gap-4  justify-center items-center text-6xl p-2 font-extrabold text-white rounded-lg text-orange-20">
+          I  Love <h1>👨🏽‍💻</h1>To
         </h1>
-        <br />
 
-        <h1 className=" bg-orange-800 rounded-e-full p-2   animate-pulse">
+        <h1 className=" bg-gradient-to-r from-violet-950 to- rounded-e-full p-2 animate-pulse">
           Explore & Code
         </h1>
       </div>
-      
     </div>
   );
 };
