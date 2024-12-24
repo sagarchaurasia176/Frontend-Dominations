@@ -19,10 +19,11 @@ const App = () => {
       y: "-100%",
       opacity: 1,
       duration: 2,
-      delay: 2.0,
+      delay: 4.0,
       ease: "expo.out",
     });
   });
+
 
   return (
     <>
@@ -33,7 +34,7 @@ const App = () => {
           ref={homeRef}
           className="h-screen w-full z-10 fixed bg-gradient-to-l from-blue-800 via-black  bg-opacity-50 backdrop-blur-lg"
         >
-       <MenuPage/>
+          {/* <MenuPage/> */}
           <LoadParent />
           <div className=" h-screen my-32 lg:my-32 ">
             <div className="">
