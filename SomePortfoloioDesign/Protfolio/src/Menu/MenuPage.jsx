@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import MenusLeft from "./MenusLeft";
 import MenuRight from "./MenuRight";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-const MenuPage = () => {
+// Menu Page
+const MenuPage = (props) => {
+  const menuRef = useRef(null);
+  useGSAP(() => {
+    if (props.menuOpen) {
+      gsap.to(menuRef.current, {
+        top: 0,
+      });
+    } else {
+      gsap.to(menuRef.current, {
+        top: "100%",
+      });
+    }
+  }, [props.menuOpen]);
+
   return (
-    <div className="fixed h-screen w-full bg-slate-900 top-0 z-50">
-      {/* menu left   */}
-      {/* menu right */}
+    <div
+      ref={menuRef}
+      className="fixed h-screen flex w-full top-full bg-slate-900  z-50"
+    >
       <MenusLeft />
-      <MenuRight />
+      <MenuRight menuOpen={props.menuOpen} setOpen={props.setOpen} />
     </div>
   );
 };
