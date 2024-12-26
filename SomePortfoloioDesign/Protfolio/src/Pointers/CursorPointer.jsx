@@ -1,12 +1,12 @@
+import { motion } from 'framer-motion'
 import React from 'react'
-
 const CursorPointer = () => {
   return (
-    <div>
-
-            
+    <div.motion>
       
-    </div>
+
+      
+    </div.motion>
   )
 }
 

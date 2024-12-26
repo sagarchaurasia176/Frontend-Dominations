@@ -7,6 +7,8 @@ import gsap from "gsap";
 import MenuPage from "./Menu/MenuPage";
 import HeaderTextsAboutMe from "./components/Loader/HeaderTextsAboutMe";
 // Import the necessary functions or values from shrey.js
+import {motion} from 'framer-motion'
+
 
 // App Component
 const App = () => {
