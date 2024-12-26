@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion'
 import React from 'react'
+import framer, { animate } from 'framer-motion';
+
+// Cursor pointer
 const CursorPointer = () => {
   return (
-    <div.motion>
-      
-
-      
-    </div.motion>
+    <motion.div animate={{x:100}}>
+      <h1>sagar</h1>
+      </motion.div>
   )
 }
 

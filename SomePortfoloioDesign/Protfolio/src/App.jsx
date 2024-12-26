@@ -7,8 +7,6 @@ import gsap from "gsap";
 import MenuPage from "./Menu/MenuPage";
 import HeaderTextsAboutMe from "./components/Loader/HeaderTextsAboutMe";
 // Import the necessary functions or values from shrey.js
-import {motion} from 'framer-motion'
-
 
 // App Component
 const App = () => {
@@ -28,6 +26,7 @@ const App = () => {
 
   const [menuOpen, setOpen] = useState(false);
   return (
+
     <>
       {/* Loading */}
       <div className="h-screen w-full">
@@ -45,6 +44,7 @@ const App = () => {
         <div className="h-screen w-full bg-backgroundImage">
           <Header menuOpen={menuOpen} setOpen={setOpen} />
         </div>
+
       </div>
     </>
   );
