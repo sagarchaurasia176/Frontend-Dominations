@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import MenuPage from "./Menu/MenuPage";
 import HeaderTextsAboutMe from "./components/Loader/HeaderTextsAboutMe";
-// Import the necessary functions or values from shrey.js
+import CursorPointer from "./Pointers/CursorPointer";
 
 // App Component
 const App = () => {
@@ -26,7 +26,6 @@ const App = () => {
 
   const [menuOpen, setOpen] = useState(false);
   return (
-
     <>
       {/* Loading */}
       <div className="h-screen w-full">
@@ -39,12 +38,11 @@ const App = () => {
           <LoadParent />
           <HeaderTextsAboutMe />
         </div>
-          <MenuPage menuOpen={menuOpen} setOpen={setOpen}   />
+        <MenuPage menuOpen={menuOpen} setOpen={setOpen} />
         {/* header */}
         <div className="h-screen w-full bg-backgroundImage">
           <Header menuOpen={menuOpen} setOpen={setOpen} />
         </div>
-
       </div>
     </>
   );
