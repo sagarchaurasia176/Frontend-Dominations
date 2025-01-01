@@ -7,7 +7,8 @@ import gsap from "gsap";
 import MenuPage from "./Menu/MenuPage";
 import HeaderTextsAboutMe from "./components/Loader/HeaderTextsAboutMe";
 import CursorPointer from "./Pointers/CursorPointer";
-
+import { Routes , Route } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
 // App Component
 const App = () => {
   const homeRef = useRef(null);
@@ -43,6 +44,10 @@ const App = () => {
         <div className="h-screen w-full bg-backgroundImage">
           <Header menuOpen={menuOpen} setOpen={setOpen} />
         </div>
+      <Routes>  
+        {/* About Page */}
+        <Route path="/About-me" element={<AboutPage/>}></Route>
+      </Routes>
       </div>
     </>
   );

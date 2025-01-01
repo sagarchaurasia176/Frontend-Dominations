@@ -11,7 +11,7 @@ const MenuPage = (props) => {
     if (props.menuOpen) {
       gsap.to(menuRef.current, {
         top: 0,
-      });
+      }); 
     } else {
       gsap.to(menuRef.current, {
         top: "100%",

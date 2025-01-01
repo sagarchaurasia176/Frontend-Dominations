@@ -28,7 +28,15 @@
     font-family: u8;
     src: url('./Fonts/u8.ttf');
 }
-
+article{
+    font-family: u7;
+    font-size: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
 h1{
     font-family: u8;
     font-size: 4rem;
@@ -39,7 +47,7 @@ h1{
 
 h2{
     font-family: u8;
-    font-size: 4rem;
+    font-size: 1rem;
     color: #fff;
     text-align: center;
     margin-top: 2rem;
