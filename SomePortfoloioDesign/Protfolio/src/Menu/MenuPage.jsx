@@ -6,6 +6,7 @@ import gsap from "gsap";
 
 // Menu Page
 const MenuPage = (props) => {
+  // Closing effects
   const menuRef = useRef(null);
   useGSAP(() => {
     if (props.menuOpen) {

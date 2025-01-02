@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa"; // Importing close icon
-import Logo from '../log/Logo.png'
+import Logo from "../log/Logo.png";
 import { Link } from "react-router-dom";
 import { RightSideContent } from "../apis/RightBarContent";
 // Menu right
@@ -10,6 +10,7 @@ const MenuRight = (props) => {
     props.setOpen(false);
   };
 
+  
 
 
   return (
@@ -22,17 +23,14 @@ const MenuRight = (props) => {
           <FaTimes className="text-white" /> {/* Adding close icon */}
         </div>
       </div>
-      
-        {/* Added contents */}
+
+      {/* Added contents */}
       <div className="  flex items-center  justify-center text-white  font-semibold">
         <article className=" cursor-pointer capitalize">
           {RightSideContent.map((item, index) => (
-          <div>
-            <Link to={item.Path}>
-              {item.name}
-            </Link>
-          </div>
-
+            <div key={index}>
+              <Link to={item.Path}>{item.name}</Link>
+            </div>
           ))}
         </article>
       </div>
