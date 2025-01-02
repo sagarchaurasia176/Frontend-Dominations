@@ -9,6 +9,7 @@ import HeaderTextsAboutMe from "./components/Loader/HeaderTextsAboutMe";
 import CursorPointer from "./Pointers/CursorPointer";
 import { Routes , Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
+import Home from "./Home";
 // App Component
 const App = () => {
   const homeRef = useRef(null);
@@ -40,13 +41,11 @@ const App = () => {
           <HeaderTextsAboutMe />
         </div>
         <MenuPage menuOpen={menuOpen} setOpen={setOpen} />
-        {/* header */}
-        <div className="h-screen w-full bg-backgroundImage">
-          <Header menuOpen={menuOpen} setOpen={setOpen} />
-        </div>
+         
       <Routes>  
         {/* About Page */}
-        <Route path="/About-me" element={<AboutPage/>}></Route>
+        <Route path="/" element={<Home menuOpen={menuOpen} setOpen={setOpen}/>}></Route>
+        <Route path="/AboutMe" element={<AboutPage/>}></Route>
       </Routes>
       </div>
     </>

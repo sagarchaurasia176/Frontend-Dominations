@@ -2,7 +2,7 @@
 export const RightSideContent = [
   {
     name: "About",
-    Path:"/About-me"
+    Path:"/AboutMe"
   },
   {
     name: "Experience",
