@@ -23,7 +23,7 @@ const MenuPage = (props) => {
   return (
     <div
       ref={menuRef}
-      className="fixed h-screen flex w-full top-full bg-slate-900  z-50"
+      className=" fixed h-screen flex w-full top-full bg-slate-900  z-50"
     >
       <MenusLeft />
       <MenuRight menuOpen={props.menuOpen} setOpen={props.setOpen} />

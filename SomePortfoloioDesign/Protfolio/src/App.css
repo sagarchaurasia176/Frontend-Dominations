@@ -65,4 +65,8 @@ p{
 
 span{
     display: inline-block;
+    font-family: u4;
+    font-size: 1.0rem;
+    color: #fff;
+    text-align: center;
 }

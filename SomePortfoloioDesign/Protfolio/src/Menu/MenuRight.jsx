@@ -10,11 +10,8 @@ const MenuRight = (props) => {
     props.setOpen(false);
   };
 
-  
-
-
   return (
-    <div className=" w-1/3 bg-slate-950 shadow-lg  h-full relative p-1">
+    <div className=" w-2/3  text-justify  bg-slate-950 shadow-lg  h-full relative p-1">
       <div className=" flex justify-end  font-[u7] px-2 items-center relative">
         <div
           onClick={CloseBars}
@@ -25,7 +22,7 @@ const MenuRight = (props) => {
       </div>
 
       {/* Added contents */}
-      <div className="  flex items-center  justify-center text-white  font-semibold">
+      <div className="  flex items-center   justify-center text-white  font-semibold">
         <article className=" cursor-pointer capitalize">
           {RightSideContent.map((item, index) => (
             <div key={index}>

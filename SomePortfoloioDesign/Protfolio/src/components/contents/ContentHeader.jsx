@@ -51,11 +51,11 @@ const ContentHeader = () => {
       <div className=" flex justify-center">
         <h1
           ref={textRef}
-          className="  text-center font-extrabold text-slate-100"
+          className="    text-2xl lg:text-8xl text-center font-extrabold text-slate-100"
         >
           Sagar &nbsp;
         </h1>
-        <h2 ref={textRefs} className=" text-center  text-yellow-400 ">
+        <h2 ref={textRefs} className=" text-center  text-2xl lg:text-8xl text-yellow-400 ">
           Chaurasia
         </h2>
       </div>

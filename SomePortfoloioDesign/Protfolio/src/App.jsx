@@ -21,7 +21,7 @@ const App = () => {
       y: "-100%",
       opacity: 1,
       duration: 2,
-      delay: 4.0,
+      delay: 1.0,
       ease: "expo.out",
     });
   });
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       {/* Loading */}
-      <div className="h-screen w-full">
+      <div className="h-screen w-full bg-slate-950">
         {/* This is basically a black screen */}
         <div
           ref={homeRef}
@@ -47,7 +47,10 @@ const App = () => {
             path="/"
             element={<Home menuOpen={menuOpen} setOpen={setOpen} />}
           ></Route>
-          <Route path="/AboutMe" element={<AboutPage  homeRef={homeRef} />}></Route>
+          <Route
+            path="/AboutMe"
+            element={<AboutPage menuOpen={menuOpen} setOpen={setOpen} />}
+          ></Route>
         </Routes>
       </div>
     </>
