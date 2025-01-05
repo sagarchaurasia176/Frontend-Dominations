@@ -21,8 +21,11 @@ const Header = (props) => {
           onClick={Menu}
           className="cursor-pointer flex items-center bg-orange-200 p-2 rounded-r-lg font-[u7] text-black rounded-lg"
         >
-          <FaBars className="mr-2 cursor-pointer" /> {/* Add icon here */}
+          <Link to='/Menu'>
+          <FaBars  className="mr-2 cursor-pointer" /> {/* Add icon here */}
           Menu
+        
+          </Link>
         </button>
       </nav>
     </div>

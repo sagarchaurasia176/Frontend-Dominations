@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import MenusLeft from "./MenusLeft";
 import MenuRight from "./MenuRight";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -23,9 +22,8 @@ const MenuPage = (props) => {
   return (
     <div
       ref={menuRef}
-      className=" fixed h-screen flex w-full top-full bg-slate-900  z-50"
+      className="h-screen w-full top-full bg-slate-900  z-50"
     >
-      <MenusLeft />
       <MenuRight menuOpen={props.menuOpen} setOpen={props.setOpen} />
     </div>
   );

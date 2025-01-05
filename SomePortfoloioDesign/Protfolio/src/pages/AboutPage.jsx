@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { RightSideContent } from "../apis/AboutMe";
 import { FaTimes } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const AboutPage = (props) => {
   const homeRef = useRef(null);
@@ -14,7 +15,7 @@ const AboutPage = (props) => {
       y: "-100%",
       opacity: 1,
       duration: 1,
-      delay: 1.0,
+      delay: 0.3,
       ease: "expo.out",
     });
   }, []); // Empty dependency array ensures it runs only once on mount
@@ -32,10 +33,13 @@ const AboutPage = (props) => {
     }
   }, [props.menuOpen]); // Runs when `props.menuOpen` changes
 
+  const nav = useNavigate()
   // Close the Menu
   const CloseBars = () => {
-    props.setOpen(false);
+    nav('/Menu')
+    props.setOpen(true);
   };
+  
 
   return (
     <div

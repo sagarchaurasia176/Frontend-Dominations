@@ -40,7 +40,6 @@ const App = () => {
           <LoadParent />
           <HeaderTextsAboutMe />
         </div>
-        <MenuPage menuOpen={menuOpen} setOpen={setOpen} />
         <Routes>
           {/* About Page */}
           <Route
@@ -50,6 +49,10 @@ const App = () => {
           <Route
             path="/AboutMe"
             element={<AboutPage menuOpen={menuOpen} setOpen={setOpen} />}
+          ></Route>
+          <Route
+            path="/Menu"
+            element={<MenuPage menuOpen={menuOpen} setOpen={setOpen} />}
           ></Route>
         </Routes>
       </div>

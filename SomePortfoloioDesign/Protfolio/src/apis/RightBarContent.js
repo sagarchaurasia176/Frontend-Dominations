@@ -7,7 +7,6 @@ export const RightSideContent = [
   {
     name: "Experience",
     Path:""
-
   },
   {
     name: "Projects",
