@@ -8,7 +8,7 @@ let FruitBoxInputs = document.querySelector("#fruit-input");
 
 
 // can we have to extra arr
-
+// let see how to implement this one
 
 // How to do 
 let arr = [];
