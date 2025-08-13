@@ -20,6 +20,7 @@ AddFruit.addEventListener("click", (e) => {
 
     FruitBoxInputs.value = ""
 });
+let val = "Sagar"
 
 
 // remove element from the List
