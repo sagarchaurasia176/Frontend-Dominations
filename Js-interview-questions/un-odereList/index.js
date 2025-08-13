@@ -9,7 +9,7 @@ let FruitBoxInputs = document.querySelector("#fruit-input");
 
 // can we have to extra arr
 // let see how to implement this one
-
+// just inital checkups 
 // How to do 
 let arr = [];
 
